@@ -1,0 +1,21 @@
+body{
+    background:#00f;
+}  
+.botao-enviar{
+    background:#f00; 
+    color:#fff; 
+    width:200px; 
+    height:30px; 
+    font-size:20px
+}  
+.sem-borda{
+    border:none;
+}
+input[type="submit"]{
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    background:#fff; 
+    color:#f00; 
+    border: 1px #f00 solid;
+}
