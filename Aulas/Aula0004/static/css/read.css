@@ -1,0 +1,78 @@
+body, div, header, main, footer{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #3a9faa;
+    color:#ffee00;
+}
+header{
+    height: 90px;
+    background: #f00;
+}
+main{
+    width: 90%;
+    margin: 5em auto;
+    border: #fff 2px solid;
+    background: #fff;
+    color: #000;
+    min-height: 400px;
+}
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background: purple;
+    width: 100%;
+}
+
+/* Tabela */
+table{
+    color: #000;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    
+}
+thead tr th{
+    background: #f00;
+    color: #fff;
+    font-size: 25px;
+}
+tbody tr{
+    height: 40px;
+    border-radius: 5px;
+}
+tbody tr td{
+    color: #ffee00;
+    background: rgb(255, 88, 185);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.editar{
+    color:#71f781;
+}
+.editar:hover{
+    background: #71f781;
+    color:#f00
+}
+.deletar{
+    color:#f00;
+}
+.deletar:hover{
+    background: #0015ff;
+    color:#ffee00
+}

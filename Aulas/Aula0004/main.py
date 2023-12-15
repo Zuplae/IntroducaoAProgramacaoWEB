@@ -4,15 +4,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def inicio():
-    usuario = "Ana"
-    return render_template('index.html', usuario=usuario)
+    return render_template('index.html')
 
 @app.route("/create")
 def create():
-    return "Pagina de criação"
+    return render_template('create.html')
 
 @app.route("/list")
 def list():
-    return "Página de listagem"
+    return render_template('list.html')
 
 app.run(debug=True)

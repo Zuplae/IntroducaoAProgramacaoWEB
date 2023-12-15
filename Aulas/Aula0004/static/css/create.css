@@ -1,0 +1,85 @@
+body, div, header, main, footer{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #3a9faa;
+    color:#ffee00;
+}
+header{
+    height: 90px;
+    background: #f00;
+}
+main{
+    width: 90%;
+    margin: 5em auto;
+    border: #fff 2px solid;
+    background: #fff;
+    color: #000;
+    min-height: 400px;
+}
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background: purple;
+    width: 100%;
+}
+
+/* FORMULARIO */
+
+
+form{
+    border: 1px solid #000;
+    width: 30%;
+    margin: 5em auto;
+    padding: 15px 10px;
+    background: rgb(107, 255, 16);
+}
+.form-item{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: end;
+}
+input[type="text"], input[type="number"]{
+    width: 300px;
+    border-radius: 5px;
+    height: 35px;
+}
+label{
+    margin-right: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.botao{
+    margin-top: 20px;
+    cursor: pointer; 
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    text-transform: uppercase;
+}
+
+input[type="submit"]{
+    background: #fff;
+    color: #f00;
+}
+input[type="submit"]:hover{
+    background: #f00;
+    color: #fff;
+}
+button{
+    background: #fff;
+    color: #3a9faa;
+}
+button:hover{
+    background: #3a9faa;
+    color: #fff;
+}
