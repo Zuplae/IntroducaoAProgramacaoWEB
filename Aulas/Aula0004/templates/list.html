@@ -20,21 +20,17 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {% for p in lista %}
                     <tr>
-                        <td>Maria</td>
-                        <td>É boa</td>
-                        <td>R$ 2,99</td>
+                        <td>{{ p["nome"] }}</td>
+                        <td>{{ p["descricao"] }}</td>
+                        <td>{{ p["valor"] }}</td>
                         <td><a class="editar" href="">Editar</a> | <a class="deletar" href="">Deletar</a></td>
                     </tr>
-                    <tr>
-                        <td>Trakinas</td>
-                        <td>É muito boa</td>
-                        <td>R$ 5,99</td>
-                        <td><a class="editar" href="">Editar</a> | <a class="deletar" href="">Deletar</a></td>
-                    </tr>
+                    {% endfor %}
                 </tbody>
             </table>
-
+            <a href="/create">Criar novo produto</a>
         </main>
         <footer>
 

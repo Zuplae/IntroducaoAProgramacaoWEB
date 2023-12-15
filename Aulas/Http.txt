@@ -1,0 +1,16 @@
+solicita uma URL/ end site = REQUEST http://127.0.0.1:5000/list
+retornar uma resposta = RESPONSE
+
+request <-> response 
+STATUS = 
+    SUCESSO 200, 201, 204 , 
+    Redirecionamento 301, 304, 
+    Erro do usuario = 401, 404
+    Erro de servidor = 500, 501 - -
+
+Verbos HTTP = 
+    GET = Listar, Pegar algo
+    POST = Criar um recurso, ou salvar dados
+    PUT = atualizar um recurso - todo
+    PATCH = atualizar um recurso - parte
+    DELETE = deletar um recurso
