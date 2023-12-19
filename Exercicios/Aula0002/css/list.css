@@ -1,0 +1,17 @@
+table{
+    width: 600px;
+    margin: auto;
+    color: #000;
+    border: 1px solid #ff5a5f;
+    border-collapse: collapse;
+}
+table thead{
+    background: #ff5a5f;
+    color: #fff;
+    height: 30px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+table tbody tr td{
+    padding: 10px 5px;
+}
