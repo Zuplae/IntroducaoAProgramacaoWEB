@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Pacotes de viagem - Inicio</title>
+        <link rel="stylesheet" href="static/css/list.css">
+        <link rel="stylesheet" href="static/css/comum.css">
+    </head>
+    <body>
+        <header>
+            <div id="header-content">
+                <div id="logo">
+                    <a href="/">
+                        <img src="static/img/logo.png" alt="Logo Empresa">
+                    </a>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="/create">Criar</a></li>
+                            <li><a href="/list">Listar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Lista de pacotes</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Destino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in pacotes %}
+                    <tr>
+                        <td>{{ p.nome }}</td>
+                        <td>{{ p.descricao }}</td>
+                        <td>{{ p.destino }}</td>
+                    </tr>  
+                    
+                    {% endfor %}
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p>Todos os direitos reservados AIRBNB 2023</p>
+        </footer>
+    </body>
+</html>
